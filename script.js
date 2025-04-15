@@ -1,7 +1,7 @@
 // This is for the people tab.
 const peopleList = document.getElementById('people-list');
 if (peopleList) {
-  fetch('https://my-json-server.typicode.com/sierraobryan/we-lead-cs-people/people/db')
+  fetch('https://my-json-server.typicode.com/sierraobryan/we-lead-cs-people/people')
     .then(response => response.json())
     .then(people => {
       people.forEach(person => {
@@ -21,7 +21,7 @@ if (peopleList) {
 // This is for the projects tab.
 const projectsList = document.getElementById('projects-list');
 if (projectsList) {
-  fetch('https://my-json-server.typicode.com/sierraobryan/we-lead-cs-projects/db')
+  fetch('https://my-json-server.typicode.com/sierraobryan/we-lead-cs-projects/projects')
     .then(response => response.json())
     .then(projects => {
       projects.forEach(project => {
