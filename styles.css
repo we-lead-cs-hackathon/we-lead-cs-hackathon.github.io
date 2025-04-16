@@ -8,20 +8,27 @@ h1 {
   text-align: center;
 }
 
-nav ul {
-  list-style-type: none;
-  padding: 0;
+.tabs {
   text-align: center;
+  margin-bottom: 20px;
 }
 
-nav ul li {
-  display: inline;
-  margin: 0 15px;
-}
-
-nav ul li a {
-  text-decoration: none;
+.tablinks {
+  background-color: #f1f1f1;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
   font-size: 18px;
+  margin: 0 10px;
+}
+
+.tablinks:hover {
+  background-color: #ddd;
+}
+
+.tabcontent {
+  display: none;
+  padding: 20px;
 }
 
 #people-list, #projects-list {
