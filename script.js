@@ -25,7 +25,7 @@ function openTab(evt, tabName) {
 
 // Fetch data for People
 const peopleList = document.getElementById('people-list');
-fetch('https://my-json-server.typicode.com/your-username/your-repo/people')
+fetch('https://my-json-server.typicode.com/sierraobryan/we-lead-cs-people/people')
   .then(response => response.json())
   .then(people => {
     people.forEach(person => {
@@ -43,7 +43,7 @@ fetch('https://my-json-server.typicode.com/your-username/your-repo/people')
 
 // Fetch data for Projects
 const projectsList = document.getElementById('projects-list');
-fetch('https://my-json-server.typicode.com/your-username/your-repo/projects')
+fetch('https://my-json-server.typicode.com/sierraobryan/we-lead-cs-projects/projects')
   .then(response => response.json())
   .then(projects => {
     projects.forEach(project => {
