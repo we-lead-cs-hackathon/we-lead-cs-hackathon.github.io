@@ -1,5 +1,7 @@
 // Show the "People" tab by default
-document.getElementById("defaultOpen").click();
+window.onload = function() {
+  openTab(event, 'people');
+}
 
 // Function to switch between tabs
 function openTab(evt, tabName) {
@@ -17,8 +19,9 @@ function openTab(evt, tabName) {
 
   // Show the selected tab
   document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.classList.add("active");
+  document.getElementById(evt.currentTarget.id).classList.add("active");
 }
+
 
 // Fetch data for People
 const peopleList = document.getElementById('people-list');
